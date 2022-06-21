@@ -1,12 +1,7 @@
-// const express = require("express");
-// const app = express();
-// const http = require("http");
-// const server = http.createServer(app);
-import { createServer } from "http";
 import express from "express";
+import { createServer } from "http";
 // import cors from "cors";
 import { Server } from "socket.io";
-// import SocketList from "./SocketList.js";
 
 const PORT = process.env.PORT || 3000;
 
@@ -29,6 +24,7 @@ io.on("connection", (socket) => {
     // TODO: 通过 Redis 或者 Kafaka 消息队列多进程处理
     // 新的用户连接
     const msg = JSON.parse(arg);
+    console.log(msg);
     // 通知所有客户端
     callback("got it");
   });
