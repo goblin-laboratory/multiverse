@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env PORT=3000 node index",
+    "start": "cross-env PORT=18020 node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
