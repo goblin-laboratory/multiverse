@@ -1,17 +1,22 @@
 {
+  "private": true,
   "name": "multiverse",
   "version": "1.0.0",
+  "author": "xiaosong <kunkkaco@gmail.com>",
+  "keywords": [],
   "description": "",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
+    "start:x": "yarn workspace professor-x start",
+    "start:wq": "yarn workspace white-queen start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "packageManager": "pnpm@7.3.0",
-  "private": true,
+  "packageManager": "yarn@1.22.19",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "lerna": "^5.1.4"
+  }
 }
