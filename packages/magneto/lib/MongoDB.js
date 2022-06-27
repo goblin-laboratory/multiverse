@@ -25,10 +25,10 @@ import { MongoClient } from "mongodb";
 class MongoDB {
   static instance = null;
   static getInstance(uri) {
-    if (!instance) {
-      instance = new MongoDB(uri);
+    if (!MongoDB.instance) {
+      MongoDB.instance = new MongoDB(uri);
     }
-    return instance;
+    return MongoDB.instance;
   }
   constructor(uri) {
     this.uri = uri;
@@ -40,10 +40,10 @@ class MongoDB {
   async disconnect() {
     await this.client.close();
   }
-  async findOne(collection, query) {
-    const collection = this.database.collection(collection);
-    return await collection.findOne(query);
-  }
+  // async findOne(collection, query) {
+  //   const collection = this.database.collection(collection);
+  //   return await collection.findOne(query);
+  // }
 }
 
 export default MongoDB;

@@ -6,7 +6,7 @@
   "homepage": "https://github.com/goblin-laboratory/multiverse#readme",
   "license": "MIT",
   "type": "module",
-  "main": "lib/magneto.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -22,13 +22,18 @@
     "url": "git+https://github.com/goblin-laboratory/multiverse.git"
   },
   "scripts": {
-    "start": "node lib/magneto.js",
+    "start": "node index.js | pino-pretty",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/goblin-laboratory/multiverse/issues"
   },
   "dependencies": {
-    "mongodb": "^4.7.0"
+    "mongodb": "^4.7.0",
+    "pino": "^8.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1"
   }
 }
