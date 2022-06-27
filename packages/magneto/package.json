@@ -1,0 +1,34 @@
+{
+  "name": "magneto",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "xiaosong <kunkkaco@gmail.com>",
+  "homepage": "https://github.com/goblin-laboratory/multiverse#readme",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/magneto.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goblin-laboratory/multiverse.git"
+  },
+  "scripts": {
+    "start": "node lib/magneto.js",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/goblin-laboratory/multiverse/issues"
+  },
+  "dependencies": {
+    "mongodb": "^4.7.0"
+  }
+}

@@ -10,6 +10,7 @@
   "scripts": {
     "start:x": "yarn workspace professor-x start",
     "start:wq": "yarn workspace white-queen start",
+    "start:m": "yarn workspace magneto start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "packageManager": "yarn@1.22.19",
